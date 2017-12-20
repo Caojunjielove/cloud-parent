@@ -1,0 +1,25 @@
+{
+  "groups": [{
+    "name": "spring.cloud.feign.httpclient",
+    "type": "org.cjj.config.FeignHttpclientProperties",
+    "sourceType": "org.cjj.config.FeignHttpclientProperties"
+  }],
+  "properties": [
+    {
+      "name": "spring.cloud.feign.httpclient.alive",
+      "type": "java.lang.Long",
+      "sourceType": "org.cjj.config.FeignHttpclientProperties"
+    },
+    {
+      "name": "spring.cloud.feign.httpclient.default-max-per-route",
+      "type": "java.lang.Integer",
+      "sourceType": "org.cjj.config.FeignHttpclientProperties"
+    },
+    {
+      "name": "spring.cloud.feign.httpclient.max-total",
+      "type": "java.lang.Integer",
+      "sourceType": "org.cjj.config.FeignHttpclientProperties"
+    }
+  ],
+  "hints": []
+}

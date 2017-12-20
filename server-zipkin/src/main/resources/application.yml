@@ -1,0 +1,17 @@
+server:
+  port: 9006
+
+spring:
+  application:
+    name: server-zipkin
+  sleuth:
+    enabled: false
+
+    
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9001/eureka/
+logging:
+  path: log/

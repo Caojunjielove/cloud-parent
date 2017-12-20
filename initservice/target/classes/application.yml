@@ -1,0 +1,27 @@
+server:
+  port: 9004
+
+spring:
+  application:
+    name: initservice
+  zipkin:
+    base-url: http://localhost:9006
+  sleuth:
+    sampler:
+      percentage: 1.0
+  cloud:
+    feign:
+      httpclient:
+        maxTotal: 200
+        defaultMaxPerRoute: 20
+        alive: 5000
+        
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9001/eureka/
+      
+
+logging:
+  level: debug
+  path: log/

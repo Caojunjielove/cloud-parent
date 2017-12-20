@@ -1,0 +1,17 @@
+server:
+  port: 9005
+
+spring:
+  application:
+    name: queryservice
+  zipkin:
+    base-url: http://localhost:9006
+  sleuth:
+    sampler:
+      percentage: 1.0
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9001/eureka/
+logging:
+  path: log/
